@@ -120,7 +120,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -136,7 +136,7 @@ table {
 
 html {
   font-size: 62.5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
 }
 
@@ -228,9 +228,9 @@ img {
 
 .coin__title {
   display: block;
-  margin-left: 8px;
-    min-width: 160px;
-text-align: left;
+  min-width: 160px;
+  text-align: center;
+  padding-bottom: 8px;
 }
 
 .coin__symbol {
@@ -240,6 +240,7 @@ text-align: left;
 
 .coin__logo {
   width: 50px;
+  padding-bottom: 8px;
 }
 
 .dark-mode {
@@ -247,7 +248,53 @@ text-align: left;
   background-color: #313843;
 
   .navbar {
-    background-color: #1F2022;
+    background-color: #1f2022;
     border: none;
   }
+}
+
+.dark-mode-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.light-mode-link {
+  color: #1f2022;
+  text-decoration: none;
+}
+
+.dark-mode-input {
+  color: #fff;
+  background-color: #313843;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.light-mode-input {
+  color: #f68819;
+  background-color: papayawhip;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.light-mode-input:focus {
+  outline: none;
+}
+
+.dark-mode-input:focus {
+  outline: none;
+}
+
+.light-mode-input::placeholder {
+  color: #f68819;
+  text-align: center;
+}
+
+.dark-mode-input::placeholder {
+  color: #fff;
+  text-align: center;
 }
